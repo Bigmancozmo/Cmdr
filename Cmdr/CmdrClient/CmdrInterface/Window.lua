@@ -151,7 +151,7 @@ function Window:LoseFocus(submit)
 
 	if Gui.Visible and not GuiService.MenuIsOpen then
 		-- self:SetEntryText("")
-		Entry.TextBox:CaptureFocus()
+		if game:GetService("UserInputService").KeyboardEnabled then Entry.TextBox:CaptureFocus() end
 	elseif GuiService.MenuIsOpen and Gui.Visible then
 		self:Hide()
 	end
