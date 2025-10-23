@@ -119,6 +119,12 @@ return function(Cmdr)
 			btn.BackgroundTransparency = i == self.SelectedItem and 0.5 or 1
 
 			local start, stop = string.find(rightText:lower(), leftText:lower(), 1, true)
+			if start == nil then
+				start = 1
+			end
+			if stop == nil then
+				stop = 1
+			end
 			btn.Typed.Text = string.rep(" ", start - 1) .. leftText
 			btn.Suggest.Text = string.sub(rightText, 0, start - 1)
 				.. string.rep(" ", #leftText)
