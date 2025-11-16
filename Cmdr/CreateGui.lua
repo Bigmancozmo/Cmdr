@@ -115,7 +115,7 @@ return function()
 	TextBox.LayoutOrder = 999999999
 	TextBox.Position = UDim2.new(0, 140, 0, 0)
 	TextBox.Size = UDim2.new(1, 0, 0, 20)
-	TextBox.Text = "x"
+	TextBox.Text = ""
 	TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextBox.TextSize = 14
 	TextBox.TextXAlignment = Enum.TextXAlignment.Left
