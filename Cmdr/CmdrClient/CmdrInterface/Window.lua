@@ -25,6 +25,10 @@ local Entry = Gui:WaitForChild("Entry")
 
 Line.Parent = nil
 
+function Window:GetGui()
+	return Gui
+end
+
 --- Update the text entry label
 function Window:UpdateLabel()
 	Entry.TextLabel.Text = Player.Name .. "@" .. self.Cmdr.PlaceName .. "$"
