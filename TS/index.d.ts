@@ -59,6 +59,8 @@ interface CmdrClient {
   SetMashToEnable(isEnabled: boolean): void;
   SetActivationUnlocksMouse(isEnabled: boolean): void;
   SetHideOnLostFocus(isEnabled: boolean): void;
+  /** Returns the current Cmdr GUI. **/
+  GetGui(): Frame;
 }
 
 interface CommandContext {
