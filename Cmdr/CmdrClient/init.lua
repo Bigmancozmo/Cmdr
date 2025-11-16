@@ -108,6 +108,10 @@ function Cmdr:HandleEvent(name, callback)
 	self.Events[name] = callback
 end
 
+function Cmdr:GetGui()
+	return Interface.Window:GetGui()
+end
+
 -- Only register when we aren't in studio because don't want to overwrite what the server portion did
 if RunService:IsServer() == false then
 	Cmdr.Registry:RegisterTypesIn(script:WaitForChild("Types"))
